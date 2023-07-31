@@ -1,0 +1,22 @@
+//
+//  Common.xcconfig
+//  MVVMRxSwiftAdvance
+//
+//  Created by Nguyễn Đức Tân on 31/07/2023.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+MARKETING_VERSION = 1.0.0
+CURRENT_PROJECT_VERSION = 1
+BASE_BUNDLE_DISPLAY_NAME = MVVMRxSwiftAdvance
+BASE_PRODUCT_NAME = MVVMRxSwiftAdvance
+BAEE_PRODUCT_MODULE_NAME = MVVMRxSwiftAdvance
+BASE_PRODUCT_BUNDLE_IDENTIFIER = com.ndtan.MVVMRxSwiftAdvance
+BASE_ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon
+PRIVACY_CAMERA_USAGE = ${BASE_BUNDLE_DISPLAY_NAME} need camera
+PRIVACY_LOCATION_ALWAYS_AND_WHEN_IN_USE = ${BASE_BUNDLE_DISPLAY_NAME} need location
+PRIVACY_LOCATION_ALWAYS = ${BASE_BUNDLE_DISPLAY_NAME} need location always
+PRIVACY_LOCATION_WHEN_IN_USE = ${BASE_BUNDLE_DISPLAY_NAME} need location when use
+PRIVACY_LIBRARY_ADD_USAGE_DESCRIPTION = ${BASE_BUNDLE_DISPLAY_NAME} need access library

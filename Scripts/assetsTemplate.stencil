@@ -1,0 +1,29 @@
+// swiftlint:disable all
+// Generated using SwiftGen — https://github.com/SwiftGen/SwiftGen
+
+{% if catalogs %}
+{% set accessModifier %}{% if param.publicAccess %}public{% else %}internal{% endif %}{% endset %}
+
+import UIKit
+
+// swiftlint:disable superfluous_disable_command
+// swiftlint:disable file_length
+// MARK: - Asset Images
+
+{% macro casesBlock assets %}
+  {% for asset in assets %}
+  {% if asset.type == "image" %}
+  static let {{asset.name|swiftIdentifier:"pretty"|lowerFirstWord|escapeReservedKeywords}} = UIImage(named: "{{asset.value}}")
+  {% elif asset.items %}
+  {% call casesBlock asset.items %}
+  {% endif %}
+  {% endfor %}
+{% endmacro %}
+{{accessModifier}} extension UIImage {
+  {% call casesBlock catalogs.first.assets %}
+}
+  
+{% else %}
+// No assets found
+{% endif %}
+

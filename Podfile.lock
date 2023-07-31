@@ -1,0 +1,55 @@
+PODS:
+  - Alamofire (5.7.1)
+  - RxAlamofire (6.1.1):
+    - RxAlamofire/Core (= 6.1.1)
+  - RxAlamofire/Core (6.1.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 6.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SDWebImage (5.16.0):
+    - SDWebImage/Core (= 5.16.0)
+  - SDWebImage/Core (5.16.0)
+  - SkeletonView (1.30.4)
+  - SwiftGen (6.6.2)
+  - Swinject (2.8.3)
+
+DEPENDENCIES:
+  - RxAlamofire
+  - RxCocoa
+  - RxSwift
+  - SDWebImage
+  - SkeletonView
+  - SwiftGen (~> 6.0)
+  - Swinject
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxAlamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SkeletonView
+    - SwiftGen
+    - Swinject
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  RxAlamofire: beb75a1c452d0de225651db4903f5d29d034a620
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: 2aea163b50bfcb569a2726b6a754c54a4506fcf6
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+  SwiftGen: 1366a7f71aeef49954ca5a63ba4bef6b0f24138c
+  Swinject: 893c9a543000ac2f10ee4cbaf0933c6992c935d5
+
+PODFILE CHECKSUM: e0624f5d8534a103439f1f2e5142e036b95db729
+
+COCOAPODS: 1.11.3

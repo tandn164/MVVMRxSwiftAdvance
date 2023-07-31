@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  MVVMRxSwiftAdvance
+
+  Created by Nguyễn Đức Tân on 31/07/2023.
+  
+*/
+"tabTop" = "Top";
+"tabSetting" = "Setting";
+"OK" = "OK";
+"Error" = "Error";
+"hyphenCharacter" = "-";
+"noCharacterString" = "";
