@@ -9,5 +9,7 @@ import UIKit
 // MARK: - Asset Images
 
 internal extension UIImage {
+  static let tabbarSetting = UIImage(named: "tabbarSetting")
+  static let tabbarTop = UIImage(named: "tabbarTop")
 }
 

@@ -9,25 +9,32 @@ import UIKit
 
 enum TabType {
     case top
+    case setting
     
     var name: String {
         switch self {
         case .top:
             return Localizable.tabTop
+        case .setting:
+            return Localizable.tabSetting
         }
     }
     
     var iconOn: UIImage? {
         switch self {
         case .top:
-            return nil
+            return .tabbarTop
+        case .setting:
+            return .tabbarSetting
         }
     }
     
     var iconOff: UIImage? {
         switch self {
         case .top:
-            return nil
+            return .tabbarTop
+        case .setting:
+            return .tabbarSetting
         }
     }
     
@@ -37,6 +44,8 @@ enum TabType {
         switch self {
         case .top:
             vc = Storyboard.top.loadViewController(TopViewController.self)
+        case .setting:
+            vc = Storyboard.setting.loadViewController(SettingViewController.self)
         }
         
         return vc
@@ -44,7 +53,7 @@ enum TabType {
 }
 
 final class MainViewController: UITabBarController {
-    private let mainTabBars: [TabType] = [.top]
+    private let mainTabBars: [TabType] = [.top, .setting]
 
     override func viewDidLoad() {
         super.viewDidLoad()
