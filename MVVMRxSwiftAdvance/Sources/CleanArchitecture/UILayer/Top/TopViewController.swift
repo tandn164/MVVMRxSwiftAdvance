@@ -19,7 +19,6 @@ class TopViewController: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewType = .top
         viewModel = DIContainer.shared.resolve(TopViewModel.self)
         setupCollectionView()
         

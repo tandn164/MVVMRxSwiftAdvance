@@ -266,24 +266,16 @@
 		4DC8F2322A7789C4008E7901 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4DC8F3352A7BEC88008E7901 /* Router */,
+				4DC8F3342A7BEC6C008E7901 /* DependencyInjection */,
 				4DC8F32E2A7BDCA2008E7901 /* DataSource */,
 				4DC8F2332A7789C4008E7901 /* LocalizableString.swift */,
-				4DC8F2342A7789C4008E7901 /* ClassManager */,
 				4DC8F2372A7789C4008E7901 /* Network */,
 				4DC8F23C2A7789C4008E7901 /* AppShareData.swift */,
 				4DC8F23D2A7789C4008E7901 /* NumberUtil.swift */,
 				4DC8F23E2A7789C4008E7901 /* ApplicationUtil.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		4DC8F2342A7789C4008E7901 /* ClassManager */ = {
-			isa = PBXGroup;
-			children = (
-				4DC8F2352A7789C4008E7901 /* ViewManager.swift */,
-				4DC8F2362A7789C4008E7901 /* DIContainer.swift */,
-			);
-			path = ClassManager;
 			sourceTree = "<group>";
 		};
 		4DC8F2372A7789C4008E7901 /* Network */ = {
@@ -309,7 +301,6 @@
 			isa = PBXGroup;
 			children = (
 				4DC8F2422A7789C4008E7901 /* Constant.swift */,
-				4DC8F2432A7789C4008E7901 /* Storyboard.swift */,
 				4DC8F2442A7789C4008E7901 /* EnumDefine.swift */,
 			);
 			path = Define;
@@ -426,6 +417,23 @@
 				4DC8F23F2A7789C4008E7901 /* DomainLayer */,
 			);
 			path = CleanArchitecture;
+			sourceTree = "<group>";
+		};
+		4DC8F3342A7BEC6C008E7901 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8F2362A7789C4008E7901 /* DIContainer.swift */,
+			);
+			path = DependencyInjection;
+			sourceTree = "<group>";
+		};
+		4DC8F3352A7BEC88008E7901 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8F2352A7789C4008E7901 /* ViewManager.swift */,
+				4DC8F2432A7789C4008E7901 /* Storyboard.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 		7E0816612558A56323A28683 /* Pods */ = {
