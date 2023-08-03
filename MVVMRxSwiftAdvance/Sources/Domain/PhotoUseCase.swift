@@ -15,7 +15,9 @@ final class PhotoUseCase {
         self.photoRepo = photoRepo
     }
     
-    func getPhotos() -> Observable<[PhotoDataEntity]> {
-        photoRepo.getPhotos()
+    func getPhotos() -> Observable<[PhotoViewEntity]> {
+        photoRepo.getPhotos().map { dataEntities in
+            return dataEntities.map({PhotoViewEntity(url: $0.downloadURL)})
+        }
     }
 }

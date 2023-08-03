@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SkeletonView
 
 extension UICollectionViewCell {
     
@@ -37,4 +38,19 @@ extension UICollectionView {
         return dequeueReusableCell(withReuseIdentifier: type.identifier, for: indexPath) as? T
     }
 
+    func showSkeletonView() {
+        self.isSkeletonable = true
+        var superView = self.superview
+        while superView != nil {
+            superView?.isSkeletonable = true
+            superView = superView?.superview
+        }
+        self.prepareSkeleton(completion: { done in
+            self.showAnimatedGradientSkeleton()
+        })
+    }
+    
+    func hideSkeletonView() {
+        self.hideSkeleton()
+    }
 }
