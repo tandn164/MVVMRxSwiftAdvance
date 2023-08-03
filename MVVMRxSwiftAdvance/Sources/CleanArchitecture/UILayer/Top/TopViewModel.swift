@@ -26,7 +26,7 @@ class TopViewModel {
         photoUseCase.getPhotos()
             .subscribe(onNext: { [weak self] response in
                 self?._isFetching.accept(false)
-                self?._dataSource.data.accept(response)
+                self?._dataSource.data.accept(response.map({PhotoViewEntity(url: $0.downloadURL)}))
             }, onError: { [weak self] error in
                 self?._isFetching.accept(false)
                 self?._error.accept(error.localizedDescription)
