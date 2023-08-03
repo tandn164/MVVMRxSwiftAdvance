@@ -24,56 +24,41 @@ class TopViewController: BaseViewController {
         viewModel = DIContainer.shared.resolve(TopViewModel.self)
         setupCollectionView()
         
-        view.isSkeletonable = true
-        showSkeleton()
         bindViewModel()
         viewModel.getPhotos()
     }
     
     private func bindViewModel() {
-        viewModel.photos.drive(onNext: {[unowned self] (_) in
+        viewModel.photos.drive {[unowned self] _ in
             self.collectionView.reloadData()
-        }).disposed(by: disposeBag)
+        }.disposed(by: disposeBag)
+        
+        viewModel.isFetching.drive { [unowned self] loading in
+            if loading {
+//                LoadingHud.show()
+                self.collectionView.showSkeletonView()
+            } else {
+//                LoadingHud.hide()
+                self.collectionView.hideSkeletonView()
+            }
+        }.disposed(by: disposeBag)
     }
     
     private func setupCollectionView() {
-        collectionView.isSkeletonable = true
         collectionView.backgroundColor = .clear
         collectionView.showsVerticalScrollIndicator = true
         
         collectionView.delegate = self
-        collectionView.dataSource = self
+        collectionView.dataSource = viewModel.dataSource
         
         let layout = BouncyLayout()
         collectionView.collectionViewLayout = layout
         
         collectionView.registerCellByNib(PhotoCollectionViewCell.self)
     }
-    
-    private func showSkeleton() {
-        collectionView.prepareSkeleton(completion: { done in
-            self.view.showAnimatedGradientSkeleton()
-        })
-    }
-    
-    private func hideSkeleton() {
-        self.view.hideSkeleton()
-    }
 }
 
-extension TopViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return viewModel.numberOfImages
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueCell(PhotoCollectionViewCell.self, forIndexPath: indexPath) else {
-            return UICollectionViewCell()
-        }
-        cell.imageView.setImage(withPath: viewModel.photo(indexPath.item).downloadURL)
-        return cell
-    }
-    
+extension TopViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 15
     }

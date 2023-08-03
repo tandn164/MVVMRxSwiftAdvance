@@ -50,6 +50,12 @@
 		4DC8F27F2A779333008E7901 /* BouncyLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F27B2A779333008E7901 /* BouncyLayout.swift */; };
 		4DC8F2802A779333008E7901 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC8F27D2A779333008E7901 /* PhotoCollectionViewCell.xib */; };
 		4DC8F2812A779333008E7901 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F27E2A779333008E7901 /* PhotoCollectionViewCell.swift */; };
+		4DC8F3252A7BD7CE008E7901 /* LoadingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F3232A7BD7CE008E7901 /* LoadingCircleView.swift */; };
+		4DC8F3262A7BD7CE008E7901 /* LoadingHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F3242A7BD7CE008E7901 /* LoadingHud.swift */; };
+		4DC8F32A2A7BD845008E7901 /* TopCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F3292A7BD845008E7901 /* TopCollectionViewDataSource.swift */; };
+		4DC8F32D2A7BD8C7008E7901 /* PhotoViewEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F32C2A7BD8C7008E7901 /* PhotoViewEntity.swift */; };
+		4DC8F3302A7BDCAE008E7901 /* ArrayDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F32F2A7BDCAE008E7901 /* ArrayDataSource.swift */; };
+		4DC8F3322A7BE012008E7901 /* TopCollectionViewSkeletonDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F3312A7BE012008E7901 /* TopCollectionViewSkeletonDataSource.swift */; };
 		AA663958F26268288B60DD6E /* Pods_MVVMRxSwiftAdvance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 887C1422385C2C8F03530542 /* Pods_MVVMRxSwiftAdvance.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +111,12 @@
 		4DC8F27B2A779333008E7901 /* BouncyLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BouncyLayout.swift; sourceTree = "<group>"; };
 		4DC8F27D2A779333008E7901 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		4DC8F27E2A779333008E7901 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		4DC8F3232A7BD7CE008E7901 /* LoadingCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingCircleView.swift; sourceTree = "<group>"; };
+		4DC8F3242A7BD7CE008E7901 /* LoadingHud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingHud.swift; sourceTree = "<group>"; };
+		4DC8F3292A7BD845008E7901 /* TopCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewDataSource.swift; sourceTree = "<group>"; };
+		4DC8F32C2A7BD8C7008E7901 /* PhotoViewEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewEntity.swift; sourceTree = "<group>"; };
+		4DC8F32F2A7BDCAE008E7901 /* ArrayDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDataSource.swift; sourceTree = "<group>"; };
+		4DC8F3312A7BE012008E7901 /* TopCollectionViewSkeletonDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionViewSkeletonDataSource.swift; sourceTree = "<group>"; };
 		887C1422385C2C8F03530542 /* Pods_MVVMRxSwiftAdvance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMRxSwiftAdvance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD55CB460B08E3AE5521D845 /* Pods-MVVMRxSwiftAdvance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftAdvance.release.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftAdvance/Pods-MVVMRxSwiftAdvance.release.xcconfig"; sourceTree = "<group>"; };
 		E7B33D8953763C35D47C18A3 /* Pods-MVVMRxSwiftAdvance.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftAdvance.development.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftAdvance/Pods-MVVMRxSwiftAdvance.development.xcconfig"; sourceTree = "<group>"; };
@@ -232,6 +244,9 @@
 		4DC8F22B2A7789C4008E7901 /* Top */ = {
 			isa = PBXGroup;
 			children = (
+				4DC8F32B2A7BD8A7008E7901 /* ViewEntities */,
+				4DC8F3282A7BD828008E7901 /* DataSources */,
+				4DC8F3272A7BD809008E7901 /* Views */,
 				4DC8F22C2A7789C4008E7901 /* TopViewModel.swift */,
 				4DC8F22D2A7789C4008E7901 /* TopViewController.swift */,
 				4DC8F22E2A7789C4008E7901 /* Top.storyboard */,
@@ -253,6 +268,7 @@
 		4DC8F2322A7789C4008E7901 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				4DC8F32E2A7BDCA2008E7901 /* DataSource */,
 				4DC8F2332A7789C4008E7901 /* LocalizableString.swift */,
 				4DC8F2342A7789C4008E7901 /* ClassManager */,
 				4DC8F2372A7789C4008E7901 /* Network */,
@@ -347,8 +363,8 @@
 		4DC8F2792A779315008E7901 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
+				4DC8F3222A7BD7CE008E7901 /* Loading */,
 				4DC8F27A2A779333008E7901 /* CollectionViewLayout */,
-				4DC8F27C2A779333008E7901 /* Top */,
 			);
 			path = Controls;
 			sourceTree = "<group>";
@@ -361,13 +377,47 @@
 			path = CollectionViewLayout;
 			sourceTree = "<group>";
 		};
-		4DC8F27C2A779333008E7901 /* Top */ = {
+		4DC8F3222A7BD7CE008E7901 /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8F3232A7BD7CE008E7901 /* LoadingCircleView.swift */,
+				4DC8F3242A7BD7CE008E7901 /* LoadingHud.swift */,
+			);
+			path = Loading;
+			sourceTree = "<group>";
+		};
+		4DC8F3272A7BD809008E7901 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				4DC8F27D2A779333008E7901 /* PhotoCollectionViewCell.xib */,
 				4DC8F27E2A779333008E7901 /* PhotoCollectionViewCell.swift */,
 			);
-			path = Top;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4DC8F3282A7BD828008E7901 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8F3292A7BD845008E7901 /* TopCollectionViewDataSource.swift */,
+				4DC8F3312A7BE012008E7901 /* TopCollectionViewSkeletonDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
+		4DC8F32B2A7BD8A7008E7901 /* ViewEntities */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8F32C2A7BD8C7008E7901 /* PhotoViewEntity.swift */,
+			);
+			path = ViewEntities;
+			sourceTree = "<group>";
+		};
+		4DC8F32E2A7BDCA2008E7901 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8F32F2A7BDCAE008E7901 /* ArrayDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		7E0816612558A56323A28683 /* Pods */ = {
@@ -535,6 +585,8 @@
 				4DC8F26E2A778BA1008E7901 /* Assets.swift in Sources */,
 				4DC8F27F2A779333008E7901 /* BouncyLayout.swift in Sources */,
 				4DC8F25C2A7789C4008E7901 /* ErrorTracker.swift in Sources */,
+				4DC8F3252A7BD7CE008E7901 /* LoadingCircleView.swift in Sources */,
+				4DC8F3262A7BD7CE008E7901 /* LoadingHud.swift in Sources */,
 				4DC8F2502A7789C4008E7901 /* Observable+.swift in Sources */,
 				4DC8F2542A7789C4008E7901 /* TopViewController.swift in Sources */,
 				4DC8F25A2A7789C4008E7901 /* DIContainer.swift in Sources */,
@@ -542,7 +594,9 @@
 				4DC8F2662A7789C4008E7901 /* PhotoDataEntity.swift in Sources */,
 				4DC8F2672A7789C4008E7901 /* PhotoRepository.swift in Sources */,
 				4DC8F2682A7789C4008E7901 /* BaseRequest.swift in Sources */,
+				4DC8F3322A7BE012008E7901 /* TopCollectionViewSkeletonDataSource.swift in Sources */,
 				4DC8F2532A7789C4008E7901 /* TopViewModel.swift in Sources */,
+				4DC8F3302A7BDCAE008E7901 /* ArrayDataSource.swift in Sources */,
 				4DC8F2582A7789C4008E7901 /* LocalizableString.swift in Sources */,
 				4DC8F25E2A7789C4008E7901 /* NetworkConnection.swift in Sources */,
 				4DC8F2522A7789C4008E7901 /* UIApplication+.swift in Sources */,
@@ -552,8 +606,10 @@
 				4DC8F2022A7784D2008E7901 /* AppDelegate.swift in Sources */,
 				4DC8F2602A7789C4008E7901 /* NumberUtil.swift in Sources */,
 				4DC8F2642A7789C4008E7901 /* Storyboard.swift in Sources */,
+				4DC8F32D2A7BD8C7008E7901 /* PhotoViewEntity.swift in Sources */,
 				4DC8F2592A7789C4008E7901 /* ViewManager.swift in Sources */,
 				4DC8F25D2A7789C4008E7901 /* ActivityIndicator.swift in Sources */,
+				4DC8F32A2A7BD845008E7901 /* TopCollectionViewDataSource.swift in Sources */,
 				4DC8F24F2A7789C4008E7901 /* UICollectionView+.swift in Sources */,
 				4DC8F2722A779082008E7901 /* BaseView.swift in Sources */,
 			);
