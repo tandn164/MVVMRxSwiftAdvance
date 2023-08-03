@@ -185,13 +185,11 @@
 		4DC8F2162A778885008E7901 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				4DC8F3332A7BE58C008E7901 /* CleanArchitecture */,
 				4DC8F2792A779315008E7901 /* Controls */,
-				4DC8F2452A7789C4008E7901 /* Data */,
 				4DC8F2412A7789C4008E7901 /* Define */,
-				4DC8F23F2A7789C4008E7901 /* Domain */,
 				4DC8F2222A7789C4008E7901 /* Extensions */,
 				4DC8F2322A7789C4008E7901 /* Helpers */,
-				4DC8F22A2A7789C4008E7901 /* Screens */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -231,14 +229,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		4DC8F22A2A7789C4008E7901 /* Screens */ = {
+		4DC8F22A2A7789C4008E7901 /* UILayer */ = {
 			isa = PBXGroup;
 			children = (
 				4DC8F2742A7790A0008E7901 /* Setting */,
 				4DC8F22B2A7789C4008E7901 /* Top */,
 				4DC8F22F2A7789C4008E7901 /* Base */,
 			);
-			path = Screens;
+			path = UILayer;
 			sourceTree = "<group>";
 		};
 		4DC8F22B2A7789C4008E7901 /* Top */ = {
@@ -299,12 +297,12 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		4DC8F23F2A7789C4008E7901 /* Domain */ = {
+		4DC8F23F2A7789C4008E7901 /* DomainLayer */ = {
 			isa = PBXGroup;
 			children = (
 				4DC8F2402A7789C4008E7901 /* PhotoUseCase.swift */,
 			);
-			path = Domain;
+			path = DomainLayer;
 			sourceTree = "<group>";
 		};
 		4DC8F2412A7789C4008E7901 /* Define */ = {
@@ -317,14 +315,14 @@
 			path = Define;
 			sourceTree = "<group>";
 		};
-		4DC8F2452A7789C4008E7901 /* Data */ = {
+		4DC8F2452A7789C4008E7901 /* DataLayer */ = {
 			isa = PBXGroup;
 			children = (
 				4DC8F2462A7789C4008E7901 /* Entity */,
 				4DC8F2482A7789C4008E7901 /* Repositories */,
 				4DC8F24A2A7789C4008E7901 /* Request */,
 			);
-			path = Data;
+			path = DataLayer;
 			sourceTree = "<group>";
 		};
 		4DC8F2462A7789C4008E7901 /* Entity */ = {
@@ -418,6 +416,16 @@
 				4DC8F32F2A7BDCAE008E7901 /* ArrayDataSource.swift */,
 			);
 			path = DataSource;
+			sourceTree = "<group>";
+		};
+		4DC8F3332A7BE58C008E7901 /* CleanArchitecture */ = {
+			isa = PBXGroup;
+			children = (
+				4DC8F22A2A7789C4008E7901 /* UILayer */,
+				4DC8F2452A7789C4008E7901 /* DataLayer */,
+				4DC8F23F2A7789C4008E7901 /* DomainLayer */,
+			);
+			path = CleanArchitecture;
 			sourceTree = "<group>";
 		};
 		7E0816612558A56323A28683 /* Pods */ = {
