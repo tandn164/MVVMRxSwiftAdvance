@@ -21,9 +21,7 @@ class TopViewController: BaseViewController {
         super.viewDidLoad()
         viewModel = DIContainer.shared.resolve(TopViewModel.self)
         setupCollectionView()
-        
         bindViewModel()
-        viewModel.getPhotos()
     }
     
     private func bindViewModel() {
@@ -40,6 +38,7 @@ class TopViewController: BaseViewController {
                 self.collectionView.hideSkeletonView()
             }
         }.disposed(by: disposeBag)
+        viewModel.getPhotos()
     }
     
     private func setupCollectionView() {
