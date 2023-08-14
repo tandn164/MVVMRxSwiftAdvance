@@ -21,7 +21,7 @@ class DIContainer {
     }
     
     func register() {
-        container.register(Request.self) { _ in Request<PhotoDataEntity>.init("https://picsum.photos/v2") }
+        container.register(Request.self) { _ in Request<PhotoDataEntity>.init(AppConfig.baseUrl) }
         
         // Repository
         container.register(PhotoRepositoryProtocol.self) { resolver in
