@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DB1C6D72A8A19ED0011C8DD /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB1C6D62A8A19ED0011C8DD /* AppConfig.swift */; };
 		4DC8F2022A7784D2008E7901 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC8F2012A7784D2008E7901 /* AppDelegate.swift */; };
 		4DC8F2092A7784D2008E7901 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DC8F2072A7784D2008E7901 /* Main.storyboard */; };
 		4DC8F20B2A7784D3008E7901 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DC8F20A2A7784D3008E7901 /* Assets.xcassets */; };
@@ -62,6 +63,7 @@
 /* Begin PBXFileReference section */
 		2B5FAA9FC586725E09B78E49 /* Pods-MVVMRxSwiftAdvance.production.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftAdvance.production.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftAdvance/Pods-MVVMRxSwiftAdvance.production.xcconfig"; sourceTree = "<group>"; };
 		3941B32FBC9BFA645D9F6BFD /* Pods-MVVMRxSwiftAdvance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMRxSwiftAdvance.debug.xcconfig"; path = "Target Support Files/Pods-MVVMRxSwiftAdvance/Pods-MVVMRxSwiftAdvance.debug.xcconfig"; sourceTree = "<group>"; };
+		4DB1C6D62A8A19ED0011C8DD /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		4DC8F1FE2A7784D2008E7901 /* MVVMRxSwiftAdvance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMRxSwiftAdvance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC8F2012A7784D2008E7901 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DC8F2082A7784D2008E7901 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -302,6 +304,7 @@
 			children = (
 				4DC8F2422A7789C4008E7901 /* Constant.swift */,
 				4DC8F2442A7789C4008E7901 /* EnumDefine.swift */,
+				4DB1C6D62A8A19ED0011C8DD /* AppConfig.swift */,
 			);
 			path = Define;
 			sourceTree = "<group>";
@@ -590,6 +593,7 @@
 				4DC8F2562A7789C4008E7901 /* BaseNavigationViewController.swift in Sources */,
 				4DC8F2732A779082008E7901 /* BaseViewController.swift in Sources */,
 				4DC8F2622A7789C4008E7901 /* PhotoUseCase.swift in Sources */,
+				4DB1C6D72A8A19ED0011C8DD /* AppConfig.swift in Sources */,
 				4DC8F2512A7789C4008E7901 /* Date+.swift in Sources */,
 				4DC8F2812A779333008E7901 /* PhotoCollectionViewCell.swift in Sources */,
 				4DC8F2772A7790A0008E7901 /* SettingViewController.swift in Sources */,

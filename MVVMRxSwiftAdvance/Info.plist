@@ -30,16 +30,6 @@
         <dict>
             <key>NSAllowsArbitraryLoads</key>
             <false/>
-            <key>NSExceptionDomains</key>
-            <dict>
-                <key>aoki-members-stgv3.appli-review.me</key>
-                <dict>
-                    <key>NSExceptionAllowsInsecureHTTPLoads</key>
-                    <true/>
-                    <key>NSIncludesSubdomains</key>
-                    <true/>
-                </dict>
-            </dict>
         </dict>
         <key>NSCameraUsageDescription</key>
         <string>$(PRIVACY_CAMERA_USAGE)</string>
@@ -74,5 +64,7 @@
         </array>
         <key>UIUserInterfaceStyle</key>
         <string>Light</string>
+        <key>base_url</key>
+        <string>$(BASE_URL)</string>
     </dict>
 </plist>
